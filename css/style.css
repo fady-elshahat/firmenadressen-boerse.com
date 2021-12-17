@@ -69,7 +69,56 @@ a {
 
 /* End Nav Bar Styles */
 
+/* Start Footer Style */
 
+#footer {
+     background: #222731;
+     padding: 50px 0;
+}
+
+#footer .row.first {
+     justify-content: space-between;
+     align-items: center;
+}
+
+#footer .list-footer {
+     list-style: none;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0;
+     margin: 0;
+}
+
+#footer .list-footer .item-footer a {
+     font-family: Poppins;
+     font-weight: 500;
+     font-size: 18px;
+     line-height: 27px;
+     transition: all 0.4s;
+     color: #FFFFFF;
+}
+
+#footer .list-footer .item-footer a:hover {
+     color: #124BD8;
+}
+
+#footer p {
+     font-family: Poppins;
+     font-weight: 500;
+     font-size: 18px;
+     line-height: 27px;
+     color: #FFFFFF;
+}
+
+#footer hr {
+     height: 2px;
+     width: 100%;
+     color: #FFF;
+     display: none;
+}
+
+/* End Footer Style */
 
 
 
@@ -85,6 +134,10 @@ a {
 
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
+     .container {
+          padding: 0;
+     }
+
      .navbar .navbar-collapse .nav-item {
           margin: 0;
      }
@@ -131,6 +184,31 @@ a {
           font-size: 18px;
      }
 
+     #footer .row:first-child {
+          justify-content: center;
+     }
+
+     #footer .row.first .col-md-6:nth-child(1) {
+          width: 75%;
+          text-align: center;
+     }
+
+     #footer .list-footer {
+          flex-direction: column;
+     }
+
+     #footer .list-footer .item-footer {
+          margin: 35px 0;
+          text-align: center;
+     }
+
+     #footer hr {
+          display: block;
+     }
+
+     #footer p {
+          text-align: center;
+     }
 }
 
 
@@ -161,8 +239,30 @@ a {
 }
 
 @media (max-width: 575.98px) {
-     .navbar .container {
+     .container {
           padding: 0;
      }
-}
 
+     #footer .row.first .col-md-6:nth-child(1) {
+          width: 100%;
+     }
+
+     #footer .row:last-child .col-md-8 {
+          order: 2;
+          padding-top: 40px;
+     }
+
+     #footer .list-footer .item-footer a {
+          font-size: 16px;
+          line-height: 24px;
+     }
+
+     #footer .row:last-child .col-md-3 {
+          order: 1;
+     }
+
+     #footer .row:last-child .col-md-8 p {
+          font-size: 14px;
+          line-height: 21px;
+     }
+}
