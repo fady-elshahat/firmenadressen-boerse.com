@@ -1,5 +1,5 @@
 /* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Outfit:wght@400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap');
 
 /* Global Styles */
 body {
@@ -31,7 +31,9 @@ a {
 
 /* Start Nav Bar Styles */
 .navbar {
-     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05)
+     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+     background-color: #fff;
+     z-index: 9999;
 }
 
 .navbar-toggler:focus {
@@ -120,17 +122,90 @@ a {
 
 /* End Footer Style */
 
+/* Start Home Section in Index.html */
+#home .home-content .p-special {
+     font-family: Nunito;
+     font-weight: bold;
+     font-size: 15px;
+     line-height: 20px;
+     color: #6311F8;
+     text-shadow: 5px 0px 15px rgba(0, 0, 0, 0.05);
+     margin-bottom: 10px;
+}
+
+#home .home-content .home-titel {
+     font-family: Outfit;
+     font-weight: 700;
+     font-size: 42px;
+     line-height: 53px;
+     color: #2F2F2F;
+     text-shadow: 5px 0px 15px rgba(0, 0, 0, 0.05);
+     margin-bottom: 30px;
+}
+
+#home .home-content .desc {
+     font-family: Nunito;
+     font-weight: 400;
+     font-size: 24px;
+     line-height: 33px;
+     color: #2F2F2F;
+     text-shadow: 5px 0px 15px rgba(0, 0, 0, 0.05);
+}
+
+#home .home-flags .flag-item {
+     background: #FFFFFF;
+     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+     border-radius: 6px;
+     padding: 11px 20px;
+     width: 240px;
+     position: absolute;
+     display: flex;
+     justify-content: start;
+     align-items: center;
+     font-family: Outfit;
+     font-weight: bold;
+     font-size: 20px;
+     line-height: 25px;
+     color: #000000;
+}
+
+#home .home-flags .flag-item img {
+     margin-right: 10px;
+}
+
+#home .home-flags .flag-item.one {
+     top: 28px;
+     left: 0px;
+     z-index: 3;
+}
+
+#home .home-flags .flag-item.two {
+     top: 32%;
+     right: -53px;
+     z-index: 5;
+}
+
+#home .home-flags .flag-item.three {
+     bottom: 43px;
+     left: 46px;
+     z-index: 5
+}
+
+#home .home-img .girl-img {
+     position: absolute;
+     top: 18px;
+     z-index: 4;
+     left: 0;
+}
+
+/* End Home Section in Index.html */
 
 
 
 
 
 
-
-
-
-
-/* Media Query Is All Devices */
+/* Media Query In All Devices */
 
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
@@ -209,6 +284,19 @@ a {
      #footer p {
           text-align: center;
      }
+
+     #home .home-flags .flag-item {
+          width: 200px;
+     }
+
+     #home .home-flags .flag-item.two {
+          top: 37%;
+          right: -14px;
+     }
+
+     #home .home-img .girl-img {
+          width: 100%;
+     }
 }
 
 
@@ -236,6 +324,10 @@ a {
           order: 2;
      }
 
+     #home .row .col-md-6:nth-child(1) {
+          order: 2;
+          padding-top: 0;
+     }
 }
 
 @media (max-width: 575.98px) {
@@ -264,5 +356,34 @@ a {
      #footer .row:last-child .col-md-8 p {
           font-size: 14px;
           line-height: 21px;
+     }
+
+     #home .home-flags .flag-item {
+          width: 140px;
+          font-size: 16px;
+          padding: 5px;
+     }
+
+     #home .home-flags .flag-item img {
+          width: 23px;
+          height: 26px;
+     }
+
+     #home .home-flags .flag-item.one {
+          top: 1px;
+          left: 34px;
+     }
+
+     #home .home-flags .flag-item.two {
+          top: 24%;
+          right: 2px;
+          z-index: 5;
+     }
+
+
+     #home .home-flags .flag-item.three {
+          bottom: 11px;
+          left: 35px;
+          z-index: 5;
      }
 }
