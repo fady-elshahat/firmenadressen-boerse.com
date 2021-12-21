@@ -7,6 +7,10 @@ body {
      background-color: #FFF;
 }
 
+body#tendering {
+     background: #F6F8FF;
+}
+
 .btn-tendering {
      background: linear-gradient(93.46deg, #76DBB3 -4.05%, #2DC589 100.8%);
      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
@@ -41,7 +45,7 @@ a {
 /* Start Nav Bar Styles */
 .navbar {
      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
-     background-color: #fff;
+     background-color: #F6F8FF;
      z-index: 9999;
 }
 
@@ -428,6 +432,137 @@ a {
 
 /* ############################################################################################ */
 
+/* Start tendering Style*/
+#steps .titel {
+     font-family: Outfit;
+     font-weight: 700;
+     font-size: 42px;
+     line-height: 53px;
+     text-align: center;
+     color: #2F2F2F;
+     text-shadow: 5px 0px 15px rgba(0, 0, 0, 0.05);
+     width: 80%;
+     margin: 0 auto 40px;
+}
+
+#steps .desc {
+     font-family: Nunito;
+     font-size: 24px;
+     line-height: 33px;
+     text-align: center;
+     color: #2F2F2F;
+     text-shadow: 5px 0px 15px rgba(0, 0, 0, 0.05);
+     width: 50%;
+     margin: 0 auto 60px;
+}
+
+#steps #step1 .radio {
+     background: #FFFFFF;
+     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+     border-radius: 8px;
+     transition: all 0.4s;
+}
+
+#steps .progress {
+     width: 100%;
+     position: fixed;
+     top: 101px;
+     left: 0;
+     background-color: #E9E9E9;
+     border-radius: 0;
+     height: 10px;
+     padding: 0;
+}
+
+#steps .progress .progress-bar {
+     display: block;
+     width: 16.6%;
+     background-color: #601DEE;
+}
+
+#steps #step1 .radio input[type="radio"] {
+     display: none;
+}
+
+#step1 .radio input[type="radio"]:checked+label {
+     border: 2px solid #601DEE;
+     border-radius: 8px;
+
+}
+
+#steps #step1 .radio span {
+     padding: 37px 25px;
+     font-family: Outfit;
+     font-weight: 700;
+     font-size: 28px;
+     line-height: 25px;
+     color: #2F2F2F;
+     text-shadow: 5px 0px 15px rgba(0, 0, 0, 0.05);
+     display: block;
+}
+
+#steps #step2 {
+     display: none;
+}
+
+#step2 #form-industry {
+     margin-bottom: 60px;
+}
+
+#step2 #form-industry input {
+     background: #FFFFFF;
+     border: 1px solid #B6B6B6;
+     box-sizing: border-box;
+     outline: none;
+     border-radius: 35px;
+     width: 100%;
+     padding: 18px;
+     font-size: 20px;
+     font-weight: 500;
+     color: #414141;
+     line-height: 23px;
+}
+
+#step2 #form-industry input::placeholder {
+     font-family: Outfit;
+     font-size: 18px;
+     line-height: 23px;
+     text-transform: capitalize;
+     color: #B6B6B6;
+}
+
+.btns .back-btn, .btns .next-btn {
+     border-radius: 8px;
+     font-family: Outfit;
+     font-weight: bold;
+     font-size: 18px;
+     line-height: 23px;
+     padding: 16px 30px;
+     border: none;
+
+}
+
+.btns .back-btn {
+     background: #EFEFEF;
+     border: 1px solid #B6B6B6;
+     color: #000000;
+     margin-right: 30px;
+}
+
+.btns .next-btn {
+     color: #FFFFFF;
+     margin-left: 30px;
+     background: linear-gradient(93.46deg, #76DBB3 -4.05%, #2DC589 100.8%);
+}
+
+#step3 {
+     display: none;
+}
+
+/* End tendering Style*/
+
+
+/* ############################################################################################ */
 
 /* Media Query In All Devices */
 
@@ -612,6 +747,10 @@ a {
           line-height: 25px;
      }
 
+     .navbar {
+          padding: 17px 0;
+     }
+
      .navbar .navbar-brand {
           width: 55%;
      }
@@ -664,12 +803,15 @@ a {
           margin: 30px 0 30px;
      }
 
-
 }
 
 @media (max-width: 575.98px) {
      .container {
           padding: 0;
+     }
+
+     .navbar {
+          padding: 14px 0;
      }
 
      #footer .row.first .col-md-6:nth-child(1) {
