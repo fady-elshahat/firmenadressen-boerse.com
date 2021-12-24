@@ -12,9 +12,6 @@
           <!-- Bootstrap Css -->
           <link rel="stylesheet" href="../css/bootstrap.min.css">
 
-          <!-- Swiper Js -->
-          <link rel="stylesheet" href="../css/swiper-bundle.min.css">
-
           <!-- Main Css -->
           <link rel="stylesheet" href="../css/style.css">
 
@@ -28,7 +25,7 @@
 
           <nav class="navbar navbar-expand-lg position-fixed w-100">
                <div class="container">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="../index.html">
                          <img src="../assets/Logos/Logo 1.svg" alt="Logo img" width="100%" height="100%">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -52,7 +49,7 @@
                     </div>
                     <div class="tendering">
                          <button class="btn-tendering">
-                              <a href="#">Ausschreibung starten</a>
+                              <a href="../pages/tendering.html">Ausschreibung starten</a>
                          </button>
                     </div>
                </div>
@@ -125,28 +122,185 @@
                                         </div>
                                    </div>
                                    <div id="step3">
-                                        <p class="desc">Jetzt Top-Firmenadressen Anbieter vergleichen & sparen</p>
+                                        <p class="desc">Möchten Sie regional filtern ?</p>
+                                        <div class="row  row-choose justify-content-between align-items-center">
+                                             <div class="col-md-3">
+                                                  <div class="radio" data-regional=".row.regionals .bundesland">
+                                                       <input type="radio" id="bundesland" value="Bundesland"
+                                                            name="regional">
+                                                       <label for="bundesland">
+                                                            <img src="../assets/icons/location (5) 1.svg"
+                                                                 alt="location">
+                                                            <span>Ja - nach Bundesland</span>
+                                                       </label>
+                                                  </div>
+                                             </div>
+                                             <div class="col-md-3">
+                                                  <div class="radio" data-regional=".row.regionals .plz">
+                                                       <input type="radio" id="pLZ" value="PLZ" name="regional">
+                                                       <label for="pLZ">
+                                                            <img src="../assets/icons/send 1.svg" alt="send">
+                                                            <span>Ja - nach PLZ</span>
+                                                       </label>
+                                                  </div>
+                                             </div>
+                                             <div class="col-md-3">
+                                                  <div class="radio" data-regional=".row.regionals .stadt">
+                                                       <input type="radio" id="stadt" value="Stadt" name="regional">
+                                                       <label for="stadt">
+                                                            <img src="../assets/icons/skyline 1.svg" alt="skyline">
+                                                            <span>Ja - nach Stadt</span>
+                                                       </label>
+                                                  </div>
+                                             </div>
+                                             <div class="col-md-3">
+                                                  <div class="radio" data-step="4" data-regional="#step4">
+                                                       <div class="none">
+                                                            <img src="../assets/icons/no-waiting 1.svg" alt="no-waiting"
+                                                                 width="64px" height="64px">
+                                                            <span>Nein</span>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                             <div class="row row-btns justify-content-between align-items-center mt-5">
+                                                  <div class="col-md-12">
+                                                       <div
+                                                            class="btns d-flex justify-content-start align-items-center">
+                                                            <button class="back-btn" data-step="3">
+                                                                 <img src="../assets/icons/arrow back.svg"
+                                                                      alt="arrow back">
+                                                                 Zuruck
+                                                            </button>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="row regionals justify-content-center align-items-center">
+                                        <div class="bundesland col-md-6">
+                                             <p class="desc">Wählen Sie Ihr Bundesland</p>
+                                             <form id="form-bundesland">
+                                                  <input type="text" placeholder="Bundesland" id="Bundesland-input">
+                                             </form>
+                                             <div class="btns d-flex justify-content-center align-items-center">
+                                                  <button class="back-btn" data-step="3">
+                                                       <img src="../assets/icons/arrow back.svg" alt="arrow back">
+                                                       Zuruck
+                                                  </button>
+                                                  <button class="next-btn" data-step="3">Weiter
+                                                       <img src="../assets/icons/arrow next.svg" alt="arrow next">
+                                                  </button>
+                                             </div>
+                                        </div>
+                                        <div class="plz col-md-6">
+                                             <p class="desc">Eingabe einer Postleitzahl</p>
+                                             <form id="form-plz">
+                                                  <input type="text" placeholder="PLZ" id="plz-input">
+                                             </form>
+                                             <div class="btns d-flex justify-content-center align-items-center">
+                                                  <button class="back-btn" data-step="3">
+                                                       <img src="../assets/icons/arrow back.svg" alt="arrow back">
+                                                       Zuruck
+                                                  </button>
+                                                  <button class="next-btn" data-step="3">Weiter
+                                                       <img src="../assets/icons/arrow next.svg" alt="arrow next">
+                                                  </button>
+                                             </div>
+                                        </div>
+                                        <div class="stadt col-md-6">
+                                             <p class="desc">Wählen Sie eine Stadt</p>
+                                             <form id="form-stadt">
+                                                  <input type="text" placeholder="Stadt" id="stadt-input">
+                                             </form>
+                                             <div class="btns d-flex justify-content-center align-items-center">
+                                                  <button class="back-btn" data-step="3">
+                                                       <img src="../assets/icons/arrow back.svg" alt="arrow back">
+                                                       Zuruck
+                                                  </button>
+                                                  <button class="next-btn" data-step="3">Weiter
+                                                       <img src="../assets/icons/arrow next.svg" alt="arrow next">
+                                                  </button>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div id="step4">
+                                        <p class="desc">In welchem Land möchten Sie Ihre Kampagne starten?</p>
                                         <div class="row justify-content-center align-items-center">
                                              <div class="col-md-6">
+                                                  <form id="form-email">
+                                                       <div class="input-item">
+                                                            <label for="name-form-email">Name</label>
+                                                            <input type="text" id="name-form-email" placeholder="Name">
+                                                       </div>
+                                                       <div class="input-item">
+                                                            <label for="email-form-email">E-mail</label>
+                                                            <input type="text" id="email-form-email"
+                                                                 placeholder="E-mail">
+                                                       </div>
+
+                                                  </form>
                                                   <div class="btns d-flex justify-content-center align-items-center">
-                                                       <button class="back-btn" data-step="3">
+                                                       <button class="back-btn" data-step="4">
                                                             <img src="../assets/icons/arrow back.svg" alt="arrow back">
                                                             Zuruck
                                                        </button>
-                                                       <button class="next-btn" data-step="3">Weiter
+                                                       <button class="next-btn" data-step="4">Weiter
                                                             <img src="../assets/icons/arrow next.svg" alt="arrow next">
                                                        </button>
                                                   </div>
                                              </div>
                                         </div>
-                                   
+                                        <div id="step5">
+                                             <p class="desc">In welchem Land möchten Sie Ihre Kampagne starten?</p>
+                                             <div class="row justify-content-center align-items-center">
+                                                  <div class="col-md-6">
+                                                       <form id="form-details">
+                                                            <div class="input-item">
+                                                                 <label for="textarea-details">Geben sie uns noch mehr
+                                                                      details zum projekt</label>
+                                                                 <textarea type="text" id="textarea-details"
+                                                                      placeholder="Beschreiben Sie Ihre Projekt und Ihre Zielgruppe">
+                                                            </div>
+                                                       </form>
+                                                       <div class="btns d-flex justify-content-center align-items-center">
+                                                            <button class="back-btn" data-step="4">
+                                                                 <img src="../assets/icons/arrow back.svg" alt="arrow back">
+                                                                 Zuruck
+                                                            </button>
+                                                            <button class="next-btn" data-step="4">Weiter
+                                                                 <img src="../assets/icons/arrow next.svg" alt="arrow next">
+                                                            </button>
+                                                       </div>                                                  
+                                                       <div class="btns d-flex justify-content-center align-items-center">
+                                                            <button class="back-btn" data-step="5">
+                                                                 <img src="../assets/icons/arrow back.svg" alt="arrow back">
+                                                                 Zuruck
+                                                            </button>
+                                                            <button class="next-btn" data-step="5">Weiter
+                                                                 <img src="../assets/icons/arrow next.svg" alt="arrow next">
+                                                            </button>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                        <div id="step6">
+                                             <p class="desc">Bitte geben Sie hier Ihre Daten ein um mehrere Angebote zu erhalten</p>
+                                             <div class="btns d-flex justify-content-center align-items-center">
+                                                  <button class="back-btn" data-step="6">
+                                                       <img src="../assets/icons/arrow back.svg" alt="arrow back">
+                                                       Zuruck
+                                                  </button>
+                                                  <button class="next-btn" data-step="6">Weiter
+                                                       <img src="../assets/icons/arrow next.svg" alt="arrow next">
+                                                  </button>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="progress">
+                                        <span class="progress-bar"></span>
                                    </div>
                               </div>
-                              <div class="progress">
-                                   <span class="progress-bar"></span>
-                              </div>
                          </div>
-                    </div>
                </section>
           </main>
           <!-- End Main -->
@@ -201,9 +355,6 @@
 
           <!-- Jquery Js -->
           <script src="../js/jquery-3.6.0.min.js"></script>
-
-          <!-- Swiper Js -->
-          <script src="../js/swiper-bundle.min.js"></script>
 
           <!-- Main Js -->
           <script src="../js/tendering.js"></script>
