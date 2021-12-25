@@ -480,6 +480,8 @@ a {
      border-radius: 0;
      height: 10px;
      padding: 0;
+     z-index: 9999;
+
 }
 
 #steps .progress .progress-bar {
@@ -499,7 +501,6 @@ a {
 #step1 .radio input[type="radio"]:checked+label {
      border: 2px solid #601DEE;
      border-radius: 8px;
-
 }
 
 #steps #step1 .radio span {
@@ -511,6 +512,22 @@ a {
      color: #2F2F2F;
      text-shadow: 5px 0px 15px rgba(0, 0, 0, 0.05);
      display: block;
+}
+
+#step1 .small-step1 {
+     display: none;
+}
+
+#step3 .small-step3 {
+     display: none;
+}
+
+.small-step3 .owl-carousel .owl-item img {
+     width: auto;
+}
+
+.owl-item {
+     width: 280px;
 }
 
 #steps #step2, #steps #step4 {
@@ -528,7 +545,7 @@ a {
      outline: none;
      border-radius: 35px;
      width: 100%;
-     padding: 18px;
+     padding: 20px;
      font-size: 20px;
      font-weight: 500;
      color: #414141;
@@ -543,6 +560,51 @@ a {
      color: #B6B6B6;
 }
 
+#step4 .input-item {
+     margin-bottom: 40px;
+}
+
+#steps .input-item label {
+     font-family: Outfit;
+     font-weight: 600;
+     font-size: 18px;
+     line-height: 23px;
+     color: #414141;
+     margin-bottom: 15px;
+     display: block;
+}
+
+#step6 .input-item input, #step4 .input-item input {
+     border: 2px solid #B6B6B6;
+     box-sizing: border-box;
+     border-radius: 8px;
+     width: 100%;
+
+}
+
+#step5 textarea {
+     width: 100%;
+     resize: none;
+     height: 205px;
+     padding: 20px;
+     border: 2px solid #B6B6B6;
+     border-radius: 8px;
+     font-size: 20px;
+     font-weight: 500;
+     color: #414141;
+     line-height: 23px;
+}
+
+#step5 textarea::placeholder {
+     font-size: 18px;
+     line-height: 23px;
+     color: #B6B6B6;
+}
+
+#step5 textarea:focus {
+     outline: 0;
+}
+
 .btns .back-btn, .btns .next-btn {
      border-radius: 8px;
      font-family: Outfit;
@@ -551,7 +613,6 @@ a {
      line-height: 23px;
      padding: 16px 30px;
      border: none;
-
 }
 
 .btns .back-btn {
@@ -618,7 +679,8 @@ a {
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
      .container {
-          padding: 0;
+          padding: 10px 0;
+
      }
 
      .navbar .navbar-collapse .nav-item {
@@ -632,6 +694,10 @@ a {
      .navbar .navbar-brand {
           width: 30%;
      }
+
+     #steps .progress {
+          top: 100px;
+     }
 }
 
 /* Medium devices (tablets, less than 992px) */
@@ -640,6 +706,10 @@ a {
 
      .container {
           max-width: 90%;
+     }
+
+     .navbar {
+          padding: 0;
      }
 
      .navbar .navbar-brand {
@@ -662,7 +732,7 @@ a {
      .navbar .navbar-collapse {
           order: 3;
           text-align: center;
-          padding: 20px 0;
+          margin: 30px 0 20px;
      }
 
      .navbar .navbar-collapse .nav-item .nav-link {
@@ -779,12 +849,50 @@ a {
           margin: 0 auto 40px;
      }
 
-     .row.first {
+     #current-tenders .row.first {
           display: none;
      }
 
      #current-tenders .row.two {
           display: block;
+     }
+
+     #step1 .large-step1 {
+          display: none;
+     }
+
+     #step1 .small-step1 {
+          display: block;
+     }
+
+     #step3 .large-step3 {
+          display: none;
+     }
+
+     #step3 .small-step3 {
+          display: block;
+     }
+
+     #steps #step1 .radio span {
+          font-size: 20px;
+          line-height: 25px;
+          padding: 18px 25px 30px;
+     }
+
+     #steps .progress {
+          top: 91px;
+     }
+
+     #steps .titel {
+          font-size: 24px;
+          line-height: 30px;
+          width: 100%;
+          margin: 0 0 20px;
+     }
+
+     #steps .desc {
+          width: 100%;
+          margin: 0 0 30px;
      }
 }
 
@@ -794,10 +902,6 @@ a {
      .title {
           font-size: 20px;
           line-height: 25px;
-     }
-
-     .navbar {
-          padding: 17px 0;
      }
 
      .navbar .navbar-brand {
@@ -852,6 +956,16 @@ a {
           margin: 30px 0 30px;
      }
 
+     #steps .progress {
+          top: 101px;
+     }
+
+}
+
+@media (max-width: 675.98px) {
+     #steps .progress {
+          top: 89px;
+     }
 }
 
 @media (max-width: 575.98px) {
@@ -860,7 +974,7 @@ a {
      }
 
      .navbar {
-          padding: 14px 0;
+          padding: 12px 0;
      }
 
      #footer .row.first .col-md-6:nth-child(1) {
@@ -938,5 +1052,39 @@ a {
 
      #how-work .owl-carousel.owl-theme {
           display: block;
+     }
+
+     #steps .progress {
+          top: 76px;
+     }
+
+     #steps .btns {
+          position: absolute;
+          background-color: #FFF;
+          padding: 11px 20px;
+          left: 0;
+          width: 100%;
+          box-shadow: 0px -4px 15px rgba(0, 0, 0, 0.15);
+          justify-content: space-between !important;
+
+     }
+
+     #steps .btns img {
+          display: none;
+     }
+
+     .btns .back-btn, .btns .next-btn {
+          font-size: 16px;
+          line-height: 20px;
+          padding: 16px 30px;
+     }
+
+     .btns .back-btn {
+          background-color: transparent;
+          border: none;
+     }
+
+     #steps .container {
+          max-width: 90%;
      }
 }

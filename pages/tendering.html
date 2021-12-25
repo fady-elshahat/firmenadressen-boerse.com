@@ -12,6 +12,10 @@
           <!-- Bootstrap Css -->
           <link rel="stylesheet" href="../css/bootstrap.min.css">
 
+          <!-- Owl Carousel Css -->
+          <link rel="stylesheet" href="../css/owl.carousel/owl.carousel.min.css">
+          <link rel="stylesheet" href="../css/owl.carousel/owl.theme.default.min.css">
+
           <!-- Main Css -->
           <link rel="stylesheet" href="../css/style.css">
 
@@ -52,6 +56,7 @@
                               <a href="../pages/tendering.html">Ausschreibung starten</a>
                          </button>
                     </div>
+
                </div>
           </nav>
 
@@ -60,41 +65,72 @@
           <!-- Start Main -->
           <main>
                <section id="steps" class="py-5">
+                    <div class="progress">
+                         <span class="progress-bar"></span>
+                    </div>
                     <div class="container pt-5 pb-4">
                          <div class="row justify-content-center align-items-center pt-5">
                               <div class="col-md-12">
                                    <h1 class="titel">Jetzt Top-Firmenadressen Anbieter vergleichen &amp; sparen</h1>
                                    <div id="step1">
                                         <p class="desc">In welchem Land möchten Sie Ihre Kampagne starten?</p>
-                                        <div class="row">
-                                             <div class="col-md-4">
-                                                  <div class="radio">
-                                                       <input type="radio" id="deutschland" value="deutschland"
-                                                            name="countrie">
+                                        <div class="large-step1 ">
+                                             <div class="row">
+                                                  <div class="col-md-4">
+                                                       <div class="radio">
+                                                            <input type="radio" id="deutschland" value="deutschland"
+                                                                 name="countrie">
+                                                            <label for="deutschland">
+                                                                 <img src="../assets/imges/Rectangle 24.png"
+                                                                      alt="deutschland img" width="100%" height="100%">
+                                                                 <span>Deutschland</span>
+                                                            </label>
+                                                       </div>
+                                                  </div>
+                                                  <div class="col-md-4">
+                                                       <div class="radio">
+                                                            <input type="radio" id="schweiz" value="Schweiz"
+                                                                 name="countrie">
+                                                            <label for="schweiz">
+                                                                 <img src="../assets/imges/Rectangle 26.png"
+                                                                      alt="Schweiz img" width="100%" height="100%">
+                                                                 <span>Schweiz</span>
+                                                            </label>
+                                                       </div>
+                                                  </div>
+                                                  <div class="col-md-4">
+                                                       <div class="radio">
+                                                            <input type="radio" id="osterreich" value="Österreich"
+                                                                 name="countrie">
+                                                            <label for="osterreich">
+                                                                 <img src="../assets/imges/Rectangle 25.png"
+                                                                      alt="Österreich img" width="100%" height="100%">
+                                                                 <span>Österreich</span>
+                                                            </label>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                        <div class="small-step1">
+                                             <div class="owl-carousel step1 owl-theme">
+                                                  <div class="item radio" style="width:280px">
+                                                       <input type="radio" id="deutschland" value="deutschland" name="countrie">
                                                        <label for="deutschland">
-                                                            <img src="../assets/imges/Rectangle 24.png"
-                                                                 alt="deutschland img" width="100%" height="100%">
+                                                            <img src="../assets/imges/Rectangle 24.png" alt="deutschland img" width="100%" height="100%">
                                                             <span>Deutschland</span>
                                                        </label>
                                                   </div>
-                                             </div>
-                                             <div class="col-md-4">
-                                                  <div class="radio">
+                                                  <div class="item radio" style="width:280px">
                                                        <input type="radio" id="schweiz" value="Schweiz" name="countrie">
                                                        <label for="schweiz">
-                                                            <img src="../assets/imges/Rectangle 26.png"
-                                                                 alt="Schweiz img" width="100%" height="100%">
+                                                            <img src="../assets/imges/Rectangle 26.png" alt="Schweiz img" width="100%" height="100%">
                                                             <span>Schweiz</span>
                                                        </label>
                                                   </div>
-                                             </div>
-                                             <div class="col-md-4">
-                                                  <div class="radio">
-                                                       <input type="radio" id="osterreich" value="Österreich"
-                                                            name="countrie">
+                                                  <div class="item radio"  style="width:280px">
+                                                       <input type="radio" id="osterreich" value="Österreich" name="countrie">
                                                        <label for="osterreich">
-                                                            <img src="../assets/imges/Rectangle 25.png"
-                                                                 alt="Österreich img" width="100%" height="100%">
+                                                            <img src="../assets/imges/Rectangle 25.png" alt="Österreich img" width="100%" height="100%">
                                                             <span>Österreich</span>
                                                        </label>
                                                   </div>
@@ -123,54 +159,82 @@
                                    </div>
                                    <div id="step3">
                                         <p class="desc">Möchten Sie regional filtern ?</p>
-                                        <div class="row  row-choose justify-content-between align-items-center">
-                                             <div class="col-md-3">
-                                                  <div class="radio" data-regional=".row.regionals .bundesland">
-                                                       <input type="radio" id="bundesland" value="Bundesland"
-                                                            name="regional">
+                                        <div class="large-step3">
+                                             <div class="row row-choose justify-content-between align-items-center">
+                                                  <div class="col-md-3">
+                                                       <div class="radio" data-regional=".row.regionals .bundesland">
+                                                            <input type="radio" id="bundesland" value="Bundesland" name="regional">
+                                                            <label for="bundesland">
+                                                                 <img src="../assets/icons/location (5) 1.svg" alt="location">
+                                                                 <span>Ja - nach Bundesland</span>
+                                                            </label>
+                                                       </div>
+                                                  </div>
+                                                  <div class="col-md-3">
+                                                       <div class="radio" data-regional=".row.regionals .plz">
+                                                            <input type="radio" id="pLZ" value="PLZ" name="regional">
+                                                            <label for="pLZ">
+                                                                 <img src="../assets/icons/send 1.svg" alt="send">
+                                                                 <span>Ja - nach PLZ</span>
+                                                            </label>
+                                                       </div>
+                                                  </div>
+                                                  <div class="col-md-3">
+                                                       <div class="radio" data-regional=".row.regionals .stadt">
+                                                            <input type="radio" id="stadt" value="Stadt" name="regional">
+                                                            <label for="stadt">
+                                                                 <img src="../assets/icons/skyline 1.svg" alt="skyline">
+                                                                 <span>Ja - nach Stadt</span>
+                                                            </label>
+                                                       </div>
+                                                  </div>
+                                                  <div class="col-md-3">
+                                                       <div class="radio" data-step="4" data-regional="#step4">
+                                                            <div class="none">
+                                                                 <img src="../assets/icons/no-waiting 1.svg" alt="no-waiting" width="64px" height="64px">
+                                                                 <span>Nein</span>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                                  <div class="row row-btns justify-content-between align-items-center mt-5">
+                                                       <div class="col-md-12">
+                                                            <div class="btns d-flex justify-content-start align-items-center">
+                                                                 <button class="back-btn" data-step="3">
+                                                                      <img src="../assets/icons/arrow back.svg" alt="arrow back">
+                                                                      Zuruck
+                                                                 </button>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                        <div class="small-step3">
+                                             <div class="owl-carousel step3 owl-theme">
+                                                  <div class="item radio" data-regional=".row.regionals .bundesland" style="width:230px">
+                                                       <input type="radio" id="bundesland" value="Bundesland" name="regional">
                                                        <label for="bundesland">
-                                                            <img src="../assets/icons/location (5) 1.svg"
-                                                                 alt="location">
+                                                            <img src="../assets/icons/location (5) 1.svg" alt="location">
                                                             <span>Ja - nach Bundesland</span>
                                                        </label>
                                                   </div>
-                                             </div>
-                                             <div class="col-md-3">
-                                                  <div class="radio" data-regional=".row.regionals .plz">
+                                                  <div class="item radio" data-regional=".row.regionals .plz" style="width:230px">
                                                        <input type="radio" id="pLZ" value="PLZ" name="regional">
                                                        <label for="pLZ">
                                                             <img src="../assets/icons/send 1.svg" alt="send">
                                                             <span>Ja - nach PLZ</span>
                                                        </label>
                                                   </div>
-                                             </div>
-                                             <div class="col-md-3">
-                                                  <div class="radio" data-regional=".row.regionals .stadt">
+                                                  <div class="item radio" data-regional=".row.regionals .stadt" style="width:230px">
                                                        <input type="radio" id="stadt" value="Stadt" name="regional">
                                                        <label for="stadt">
                                                             <img src="../assets/icons/skyline 1.svg" alt="skyline">
                                                             <span>Ja - nach Stadt</span>
                                                        </label>
                                                   </div>
-                                             </div>
-                                             <div class="col-md-3">
-                                                  <div class="radio" data-step="4" data-regional="#step4">
+                                                  <div class="item radio" data-step="4" data-regional="#step4" style="width:230px">
                                                        <div class="none">
-                                                            <img src="../assets/icons/no-waiting 1.svg" alt="no-waiting"
-                                                                 width="64px" height="64px">
+                                                            <img src="../assets/icons/no-waiting 1.svg" alt="no-waiting" width="64px" height="64px">
                                                             <span>Nein</span>
-                                                       </div>
-                                                  </div>
-                                             </div>
-                                             <div class="row row-btns justify-content-between align-items-center mt-5">
-                                                  <div class="col-md-12">
-                                                       <div
-                                                            class="btns d-flex justify-content-start align-items-center">
-                                                            <button class="back-btn" data-step="3">
-                                                                 <img src="../assets/icons/arrow back.svg"
-                                                                      alt="arrow back">
-                                                                 Zuruck
-                                                            </button>
                                                        </div>
                                                   </div>
                                              </div>
@@ -237,7 +301,6 @@
                                                             <input type="text" id="email-form-email"
                                                                  placeholder="E-mail">
                                                        </div>
-
                                                   </form>
                                                   <div class="btns d-flex justify-content-center align-items-center">
                                                        <button class="back-btn" data-step="4">
@@ -250,61 +313,60 @@
                                                   </div>
                                              </div>
                                         </div>
-                                        <div id="step5">
-                                             <p class="desc">In welchem Land möchten Sie Ihre Kampagne starten?</p>
-                                             <div class="row justify-content-center align-items-center">
-                                                  <div class="col-md-6">
-                                                       <form id="form-details">
-                                                            <div class="input-item">
-                                                                 <label for="textarea-details">Geben sie uns noch mehr
-                                                                      details zum projekt</label>
-                                                                 <textarea type="text" id="textarea-details"
-                                                                      placeholder="Beschreiben Sie Ihre Projekt und Ihre Zielgruppe">
-                                                            </div>
-                                                       </form>
-                                                       <div class="btns d-flex justify-content-center align-items-center">
-                                                            <button class="back-btn" data-step="4">
-                                                                 <img src="../assets/icons/arrow back.svg" alt="arrow back">
-                                                                 Zuruck
-                                                            </button>
-                                                            <button class="next-btn" data-step="4">Weiter
-                                                                 <img src="../assets/icons/arrow next.svg" alt="arrow next">
-                                                            </button>
-                                                       </div>                                                  
-                                                       <div class="btns d-flex justify-content-center align-items-center">
-                                                            <button class="back-btn" data-step="5">
-                                                                 <img src="../assets/icons/arrow back.svg" alt="arrow back">
-                                                                 Zuruck
-                                                            </button>
-                                                            <button class="next-btn" data-step="5">Weiter
-                                                                 <img src="../assets/icons/arrow next.svg" alt="arrow next">
-                                                            </button>
+                                   </div>
+                                   <div id="step5">
+                                        <p class="desc">Bitte geben Sie hiermehr details zum projekt</p>
+                                        <div class="row justify-content-center align-items-center">
+                                             <div class="col-md-6">
+                                                  <form id="form-masseg">
+                                                       <div class="input-item">
+                                                            <label for="name-form-email">Geben sie uns noch mehr details
+                                                                 zum projekt</label>
+                                                            <textarea id="masseg-input"
+                                                                 placeholder="Beschreiben Sie Ihre Projekt und Ihre Zielgruppe"></textarea>
                                                        </div>
+                                                  </form>
+                                                  <div class="btns d-flex justify-content-center align-items-center">
+                                                       <button class="back-btn" data-step="5">
+                                                            <img src="../assets/icons/arrow back.svg" alt="arrow back">
+                                                            Zuruck
+                                                       </button>
+                                                       <button class="next-btn" data-step="5">Weiter
+                                                            <img src="../assets/icons/arrow next.svg" alt="arrow next">
+                                                       </button>
                                                   </div>
                                              </div>
                                         </div>
-                                        <div id="step6">
-                                             <p class="desc">Bitte geben Sie hier Ihre Daten ein um mehrere Angebote zu erhalten</p>
-                                             <div class="btns d-flex justify-content-center align-items-center">
-                                                  <button class="back-btn" data-step="6">
-                                                       <img src="../assets/icons/arrow back.svg" alt="arrow back">
-                                                       Zuruck
-                                                  </button>
-                                                  <button class="next-btn" data-step="6">Weiter
-                                                       <img src="../assets/icons/arrow next.svg" alt="arrow next">
-                                                  </button>
+                                   </div>
+                                   <div id="step6">
+                                        <p class="desc">Bitte geben Sie hier Ihre Daten ein um mehrere Angebote
+                                             zuerhalten</p>
+                                        <div class="row justify-content-center align-items-center">
+                                             <div class="col-md-6">
+                                                  <div class="input-item">
+                                                       <label for="phone-number">Rufnummer</label>
+                                                       <input type="text" id="phone-number"
+                                                            placeholder="+49 000 00 000">
+                                                  </div>
+                                                  <div
+                                                       class="btns d-flex justify-content-center align-items-center mt-5">
+                                                       <button class="back-btn" data-step="6">
+                                                            <img src="../assets/icons/arrow back.svg" alt="arrow back">
+                                                            Zuruck
+                                                       </button>
+                                                       <button class="next-btn" data-step="6">Weiter
+                                                            <img src="../assets/icons/arrow next.svg" alt="arrow next">
+                                                       </button>
+                                                  </div>
                                              </div>
                                         </div>
                                    </div>
-                                   <div class="progress">
-                                        <span class="progress-bar"></span>
-                                   </div>
+                                   
                               </div>
                          </div>
                </section>
           </main>
           <!-- End Main -->
-
 
           <!-- Start Footer Section -->
 
@@ -350,14 +412,18 @@
 
           <!-- End Footer Section -->
 
+
           <!-- Bootstrap Js -->
           <script src="../js/bootstrap.bundle.min.js"></script>
 
           <!-- Jquery Js -->
           <script src="../js/jquery-3.6.0.min.js"></script>
 
+          <!-- Owl Carousel Js -->
+          <script src="../js/owl.carousel.min.js"></script>
+
           <!-- Main Js -->
-          <script src="../js/tendering.js"></script>
+          <script defer src="../js/tendering.js"></script>
      </body>
 
 </html>
